@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<title>jquery鼠标悬停变暗突出显示特效</title>
+<meta http-equiv="x-ua-compatible" content="ie=7" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="https://npm.elemecdn.com/adongchong-cblogfodder/h5used/h5vcard/style_home1.css" type="text/css" media="all" />
+<script type="text/javascript" src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script>
+</head>
+<body>
+<div id="pic_show">
+  <ul id="Album">
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg" /></a>
+      <div class="Album_info"><strong>孟祥义</strong><hr/><br/><hr/><br/><span>企业主</span><span><i>建筑/装饰/房地产</i><i>北京市</i></span></div>
+    </li>
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg" /></a>
+      <div class="Album_info"><strong>颜经理</strong><hr/><br/><span>销售/贸易经理</span><span><i>机械/行业设备</i><i>聊城</i></span></div>
+    </li>
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg" /></a>
+      <div class="Album_info"><strong>吴健军</strong><hr/><br/><span>营运总监/经理</span><span><i>餐饮美食</i><i>成都市</i></span></div>
+    </li>
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg" /></a>
+      <div class="Album_info"><strong>甘露</strong><hr/><br/><span>商人</span><span><i>文教传媒</i><i>北京</i></span></div>
+    </li>
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg" /></a>
+      <div class="Album_info"><strong>左杰</strong><hr/><br/><span>网店经营者</span><span><i>建筑/装饰/房地产</i><i>济南</i></span></div>
+    </li>
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg" /></a>
+      <div class="Album_info"><strong>邓寅杰</strong><hr/><br/><span>法务工作者</span><span><i>知识产权服务</i><i>武汉市</i></span></div>
+    </li>
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg" /></a>
+      <div class="Album_info"><strong>张清</strong><hr/><br/><span>企业主</span><span><i>矿采/勘探/冶金/材料</i><i>聊城市</i></span></div>
+    </li>
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg" /></a>
+      <div class="Album_info"><strong>沈生</strong><hr/><br/><span>农民</span><span><i>建筑/装饰/房地产</i><i>贵港市</i></span></div>
+    </li>
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg" /></a>
+      <div class="Album_info"><strong>孙勰</strong><hr/><br/><span>客户经理</span><span><i>印刷/包装/纸业</i><i>无锡市</i></span></div>
+    </li>
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg" /></a>
+      <div class="Album_info"><strong>竺永涛</strong><hr/><br/><span>网络营销/推广主管</span><span><i>汽摩及运输设备</i><i>西安</i></span></div>
+    </li>
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg" /></a>
+      <div class="Album_info"><strong>许源</strong><hr/><br/><span>市场/公关经理</span><span><i>广告服务</i><i>上海市</i></span></div>
+    </li>
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg" /></a>
+      <div class="Album_info"><strong>何龙飞</strong><hr/><br/><span>物流/运输工作者</span><span><i>物流服务</i><i>上海市</i></span></div>
+    </li>
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg" /></a>
+      <div class="Album_info"><strong>周杰</strong><hr/><br/><span>市场/公关经理</span><span><i>电气、电工器材</i><i>南京市</i></span></div>
+    </li>
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg" /></a>
+      <div class="Album_info"><strong>章旭丹</strong><hr/><br/><span>客服经理/主管</span><span><i>互联网</i><i>杭州</i></span></div>
+    </li>
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg" /></a>
+      <div class="Album_info"><strong>姚克明</strong><hr/><br/><span>人文/社科工作者</span><span><i>文教传媒</i><i>青岛市</i></span></div>
+    </li>
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg" /></a>
+      <div class="Album_info"><strong>翁小姐</strong><hr/><br/><span>市场推广/促销工作者</span><span><i>药品保健/医疗器械</i><i>杭州市</i></span></div>
+    </li>
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg" /></a>
+      <div class="Album_info"><strong>陈雪梅</strong><hr/><br/><span>销售/贸易经理</span><span><i>电子/电工/ 照明</i><i>佛山</i></span></div>
+    </li>
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg" /></a>
+      <div class="Album_info"><strong>叶珊珊</strong><hr/><br/><span>商人</span><span><i>服装/服饰/鞋袜</i><i>杭州市</i></span></div>
+    </li>
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg" /></a>
+      <div class="Album_info"><strong>杨林~洞庭飞虹</strong><hr/><br/><span>系统集成工程师</span><span><i>互联网</i><i>广州市</i></span></div>
+    </li>
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg" /></a>
+      <div class="Album_info"><strong>刘付顺</strong><hr/><br/><span>销售/贸易经理</span><span><i>电子/电工/ 照明</i><i>温州市</i></span></div>
+    </li>
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg" /></a>
+      <div class="Album_info"><strong>价值工程</strong><hr/><br/><span>记者/编辑</span><span><i>出版/图书</i><i>石家庄市</i></span></div>
+    </li>
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg" /></a>
+      <div class="Album_info"><strong>许爱红</strong><hr/><br/><span>销售总监/经理</span><span><i>仪器/仪表</i><i>厦门</i></span></div>
+    </li>
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg" /></a>
+      <div class="Album_info"><strong>申总</strong><hr/><br/><span>总裁/总经理（GM）</span><span><i>建筑工程服务</i><i>盐城</i></span></div>
+    </li>
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg" /></a>
+      <div class="Album_info"><strong>方忠良</strong><hr/><br/><span>企业主</span><span><i>橡胶板、管、带</i><i>建德市</i></span></div>
+    </li>
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg" /></a>
+      <div class="Album_info"><strong>田彦</strong><hr/><br/><span>记者/编辑</span><span><i>文教传媒</i><i>石家庄</i></span></div>
+    </li>
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg" /></a>
+      <div class="Album_info"><strong>李晓鹏</strong><hr/><br/><span>企业主</span><span><i>食品/饮料</i><i>上海</i></span></div>
+    </li>
+    <li class="album_big"><a href="#" id="you_logo" target="_blank"><img src="https://npm.elemecdn.com/adongchong-cblogfodder/h5used/h5vcard/h5vcardyou.png" /></a></li>
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg" /></a>
+      <div class="Album_info"><strong>田琼</strong><hr/><br/><span>客户经理</span><span><i>机械/行业设备</i><i>东莞市</i></span></div>
+    </li>
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg" /></a>
+      <div class="Album_info"><strong>李有忠</strong><hr/><br/><span>企业主</span><span><i>广告服务</i><i>宿迁</i></span></div>
+    </li>
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg" /></a>
+      <div class="Album_info"><strong>刘先生</strong><hr/><br/><span>外贸工作者</span><span><i>商务咨询</i><i>上海市</i></span></div>
+    </li>
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg" /></a>
+      <div class="Album_info"><strong>陈梅红</strong><hr/><br/><span>销售/贸易经理</span><span><i>环保/降耗</i><i>深圳市</i></span></div>
+    </li>
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg" /></a>
+      <div class="Album_info"><strong>郭江涛</strong><hr/><br/><span>设计师</span><span><i>工艺品/礼品/玩具</i><i>上海市</i></span></div>
+    </li>
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg" /></a>
+      <div class="Album_info"><strong>李静</strong><hr/><br/><span>销售/贸易经理</span><span><i>金属制品/五金工具</i><i>冠县</i></span></div>
+    </li>
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg" /></a>
+      <div class="Album_info"><strong>高明元</strong><hr/><br/><span>首席销售官（CSO）</span><span><i>家用电器</i><i>嘉兴市</i></span></div>
+    </li>
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg" /></a>
+      <div class="Album_info"><strong>杜文全</strong><hr/><br/><span>企业主</span><span><i>建筑/装饰/房地产</i><i>杭州</i></span></div>
+    </li>
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg" /></a>
+      <div class="Album_info"><strong>李丹</strong><hr/><br/><span>销售总监/经理</span><span><i>电脑/数码/软件</i><i>广州</i></span></div>
+    </li>
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg" /></a>
+      <div class="Album_info"><strong>卡路里</strong><hr/><br/><span>营运总监/经理</span><span><i>体育/休闲/娱乐</i><i>天津市</i></span></div>
+    </li>
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg /></a>
+      <div class="Album_info"><strong>郑余</strong><hr/><br/><span>网络营销/推广工作者</span><span><i>机械/行业设备</i><i>长沙市</i></span></div>
+    </li>
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg" /></a>
+      <div class="Album_info"><strong>马刚</strong><hr/><br/><span>销售/贸易经理</span><span><i>机械/行业设备</i><i>上海市</i></span></div>
+    </li>
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg" /></a>
+      <div class="Album_info"><strong>王经理</strong><hr/><br/><span>广告工作者</span><span><i>广告服务</i><i>杭州</i></span></div>
+    </li>
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg" /></a>
+      <div class="Album_info"><strong>聂连兴</strong><hr/><br/><span>外贸工作者</span><span><i>国际/国内贸易</i><i>东莞市</i></span></div>
+    </li>
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg" /></a>
+      <div class="Album_info"><strong>彭亮</strong><hr/><br/><span>客服经理/主管</span><span><i>金属制品/五金工具</i><i>东莞市</i></span></div>
+    </li>
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg" /></a>
+      <div class="Album_info"><strong>苟尚林</strong><hr/><br/><span>销售/贸易经理</span><span><i>工艺品/礼品/玩具</i><i>宁波市</i></span></div>
+    </li>
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg" /></a>
+      <div class="Album_info"><strong>谢焰斌</strong><hr/><br/><span>销售/贸易经理</span><span><i>家用电器</i><i>合肥市</i></span></div>
+    </li>
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg" /></a>
+      <div class="Album_info"><strong>美途教育</strong><hr/><br/><span>职业教育/培训教师</span><span><i>培训教育服务</i><i>成都</i></span></div>
+    </li>
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg" /></a>
+      <div class="Album_info"><strong>李珊</strong><hr/><br/><span>渠道总监/经理</span><span><i>购物消费</i><i>天津市</i></span></div>
+    </li>
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg" /></a>
+      <div class="Album_info"><strong>韦颖硕</strong><hr/><br/><span>网站编辑</span><span><i>互联网</i><i>杭州市</i></span></div>
+    </li>
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg" /></a>
+      <div class="Album_info"><strong>立欣净菜</strong><hr/><br/><span>其他</span><span><i>食品/饮料</i><i>杭州市</i></span></div>
+    </li>
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg" /></a>
+      <div class="Album_info"><strong>洪欣</strong><hr/><br/><span>销售代表</span><span><i>印刷/包装/纸业</i><i>东莞市</i></span></div>
+    </li>
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg" /></a>
+      <div class="Album_info"><strong>苗正华</strong><hr/><br/><span>销售/贸易经理</span><span><i>机械/行业设备</i><i>盐城</i></span></div>
+    </li>
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg" /></a>
+      <div class="Album_info"><strong>沈华冬</strong><hr/><br/><span>营运总监/经理</span><span><i>互联网</i><i>杭州市</i></span></div>
+    </li>
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg" /></a>
+      <div class="Album_info"><strong>何俊</strong><hr/><br/><span>市场分析/调查工作者</span><span><i>机械/行业设备</i><i>杭州</i></span></div>
+    </li>
+    <li><a href="#" target="_blank"><em></em><img src="https://s2.loli.net/2023/03/19/oFTIi4r1cd9XwKk.jpg" /></a>
+      <div class="Album_info"><strong>董劲松</strong><hr/><br/><span>首席销售官（CSO）</span><span><i>机械/行业设备</i><i>常州</i></span></div>
+    </li>
+  </ul>
+</div>
+
+<script type="text/javascript" src="https://npm.elemecdn.com/adongchong-cblogfodder/h5used/h5vcard/album.js"></script>
+<script>
+Album.set('#Album')
+
+</script>
+<div style="text-align:center;clear:both;">
+<script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>
+<script src="/follow.js" type="text/javascript"></script>
+</div>
+
+
+</body>
+</html>
